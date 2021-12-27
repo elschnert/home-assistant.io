@@ -491,7 +491,7 @@ automation:
   - alias: "Homematic Reconnect"
     trigger:
       platform: state
-      entity_id: binary_sensor.homematic_up
+      entity_id: binary_sensor.homematic_is_sending_updates
       to: "off"
     action:
       # Reconnect, if sensor has not been updated for over 3 hours
